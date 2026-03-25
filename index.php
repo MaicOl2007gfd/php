@@ -1,5 +1,4 @@
 <?php
-session_start();
 include("conexion.php");
 
 $errors = $_SESSION['errors'] ?? [];
