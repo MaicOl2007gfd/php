@@ -44,14 +44,4 @@ if (!empty($errors)) {
     exit;
 }
 
-
-// INSERT
-$sql = "INSERT INTO registro (Nombre, Email, Contraseña1) 
-        VALUES ('$nombre', '$email', '$passwordHash')";
-
-if (mysqli_query($conexion, $sql)) {
-    echo "Usuario registrado correctamente";
-} else {
-    echo "Error: " . mysqli_error($conexion);
-}
 ?>
